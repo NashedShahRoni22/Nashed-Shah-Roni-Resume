@@ -3,7 +3,6 @@ import { Typewriter } from "react-simple-typewriter";
 import cv from "../../images/Nashed Shah Roni.pdf";
 import { Link } from "react-router-dom";
 import HomeVideo from "../../images/HomeBg.mp4";
-
 const Home = () => {
   return (
     <section className="home h-[100vh] w-full relative">

@@ -2,6 +2,7 @@ import React from "react";
 import { HiBars3CenterLeft } from "react-icons/hi2";
 import { FaGithubAlt, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaReact } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -11,8 +12,9 @@ const Navbar = () => {
             <HiBars3CenterLeft className="text-white text-4xl"></HiBars3CenterLeft>
           </label>
         </div>
-        <Link to='/'  className="ml-5 text-3xl text-white font-semibold" href="/">
-          NSR <span className="text-[#EB4A4C]">DevZone</span>
+        <Link to='/'  className="ml-5 text-3xl text-white font-semibold flex" href="/">
+          N<span className="text-[#EB4A4C]">SR</span>
+          <FaReact className="animate-spin"></FaReact>
         </Link>
       </div>
       <div className="navbar-end">

@@ -77,25 +77,25 @@ const PersonalInformation = () => {
         <div className="text-white my-20 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="rounded-xl border flex items-center gap-4 p-10">
             <h1 className="text-5xl font-semibold text-[#EB4A4C]">2+</h1>
-            <p className="text-3xl">
+            <p className="text-2xl">
               YEARS OF <br /> EXPERIENCE
             </p>
           </div>
           <div className="rounded-xl border border-[#EB4A4C] flex items-center gap-4 p-10">
             <h1 className="text-5xl font-semibold text-[#EB4A4C]">25+</h1>
-            <p className="text-3xl">
+            <p className="text-2xl">
               COMPLETED <br /> PROJECTS
             </p>
           </div>
           <div className="rounded-xl border border-[#EB4A4C] flex items-center gap-4 p-10">
             <h1 className="text-5xl font-semibold text-[#EB4A4C]">10+</h1>
-            <p className="text-3xl">
+            <p className="text-2xl">
               HAPPY <br /> CLIENTS
             </p>
           </div>
           <div className="rounded-xl border flex items-center gap-4 p-10">
             <h1 className="text-5xl font-semibold text-[#EB4A4C]">100%</h1>
-            <p className="text-3xl">
+            <p className="text-2xl">
               CLIENTS <br /> SATISFACTION
             </p>
           </div>

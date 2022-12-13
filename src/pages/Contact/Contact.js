@@ -1,15 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
 import {
   FaMap,
   FaVoicemail,
   FaPhoneSquare,
   FaLocationArrow,
 } from "react-icons/fa";
+import { toast } from "react-hot-toast";
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_x5b6iik', 'template_p003lfa', form.current, 'T7Rbwdh-wnhQbFFMU')
+      .then((result) => {
+          console.log(result.text);
+          toast.success("Message Sent Successfully!");
+          e.target.reset();
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
-    <section className="mx-10">
-      <h1 className="text-white text-5xl text-center font-bold tracking-widest">
+    <section className="mx-10 text-white">
+      <h1 className="text-4xl text-center font-bold tracking-widest">
         GET IN <span className="text-[#EB4A4C]">TOUCH</span>
       </h1>
       <div className="lg:flex gap-16">
@@ -59,24 +76,29 @@ const Contact = () => {
             LEFT AN <span className="text-[#EB4A4C]">EMAIL</span>
           </h3>
           <div className="bg-[#EB4A4C] w-full h-1 my-4"></div>
-          <form>
+
+          {/* form start here */}
+          <form ref={form} onSubmit={sendEmail}>
             <input
               type="text"
               placeholder="Name"
-              className="input input-bordered w-full my-3 rounded-full"
+              name="user_name"
+              className="input input-bordered w-full my-3 rounded-xl p-2"
             />
             <input
               type="email"
               placeholder="Email"
-              className="input input-bordered w-full my-3 rounded-full"
+              name="user_email"
+              className="input input-bordered w-full my-3 rounded-xl p-2"
             />
-            <input
+            <textarea
               type="text"
               placeholder="Message"
-              className="input input-bordered w-full my-3 rounded-full"
+              name="message"
+              className="input input-bordered w-full my-3 rounded-xl h-36 p-2"
             />
             <br />
-            <button className="btn bg-[#EB4A4C] text-white hover:bg-transparent rounded-3xl">
+            <button className="btn bg-[#EB4A4C] text-white hover:bg-transparent rounded-xl">
               <FaLocationArrow className="mr-4" /> Submit
             </button>
           </form>

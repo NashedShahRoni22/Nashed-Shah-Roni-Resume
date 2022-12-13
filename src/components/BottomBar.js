@@ -6,6 +6,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineMail,
 } from "react-icons/ai";
+import { FaBlog } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const BottomBar = () => {
@@ -22,7 +23,14 @@ const BottomBar = () => {
         </Link>
       </div>
       <div>
-        <AiOutlineFundProjectionScreen className="text-3xl"></AiOutlineFundProjectionScreen>
+        <Link to="/projects">
+          <AiOutlineFundProjectionScreen className="text-3xl"></AiOutlineFundProjectionScreen>
+        </Link>
+      </div>
+      <div>
+        <Link to="/">
+          <FaBlog className="text-3xl"></FaBlog>
+        </Link>
       </div>
       <div>
         <Link to="/contact">

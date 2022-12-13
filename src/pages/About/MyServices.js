@@ -14,7 +14,7 @@ const MyServices = () => {
         <div className="border p-10 rounded-xl">
           <BsCodeSlash className="text-5xl"></BsCodeSlash>
           <p className="text-2xl text-[#EB4A4C] my-4 font-semibold">
-            Web Development
+            Front End Development
           </p>
           <p>
             I am well expert in many front end web technology. I have done many

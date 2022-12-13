@@ -32,7 +32,7 @@ const Main = () => {
           </Link>
         </li>
         <li>
-          <Link to="/" className="text-xl font-semibold">
+          <Link to="/projects" className="text-xl font-semibold">
             <AiOutlineFundProjectionScreen /> Projects
           </Link>
         </li>
