@@ -37,7 +37,7 @@ const Main = () => {
           </Link>
         </li>
         <li>
-          <Link to="/" className="text-xl font-semibold">
+          <Link to="/blog" className="text-xl font-semibold">
             <FaBlog /> Blog
           </Link>
         </li>

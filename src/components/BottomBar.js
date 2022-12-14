@@ -28,7 +28,7 @@ const BottomBar = () => {
         </Link>
       </div>
       <div>
-        <Link to="/">
+        <Link to="/blog">
           <FaBlog className="text-3xl"></FaBlog>
         </Link>
       </div>

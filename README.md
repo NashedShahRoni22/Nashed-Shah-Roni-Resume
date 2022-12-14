@@ -7,4 +7,4 @@ Packages Used:
 5.React Icons
 6.Email JS
 7.React Hot Toast
-8.React Carousel
+8.React Responsive Carousel
