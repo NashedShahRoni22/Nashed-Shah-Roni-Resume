@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const BottomBar = () => {
   return (
-    <section className="text-white flex flex-col p-2 rounded-xl gap-6 glass w-fit">
+    <section className="text-white flex p-2 rounded-xl gap-6 glass w-fit">
       <div>
         <Link to="/">
           <AiOutlineHome className="text-3xl"></AiOutlineHome>
