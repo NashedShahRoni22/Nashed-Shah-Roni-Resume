@@ -25,16 +25,13 @@ const Contact = () => {
       });
   };
   return (
-    <section className="mx-10 text-white">
-      <h1 className="text-4xl text-center font-bold tracking-widest">
-        GET IN <span className="text-[#EB4A4C]">TOUCH</span>
-      </h1>
+    <section className="mx-5 mb-20 text-white">
       <div className="lg:flex gap-16">
-        <div className="my-20 lg:w-1/2">
+        <div className="my-5 lg:w-1/2">
           <h3 className="text-3xl font-semibold">
-            <span className="text-[#EB4A4C]">DON'T</span> BE SHY !
+            <span className="text-sky-500">DON'T</span> BE SHY !
           </h3>
-          <div className="bg-[#EB4A4C] w-full h-1 mt-4"></div>
+          <div className="bg-sky-500 w-full h-1 mt-5"></div>
           <p className="my-5">
             Feel free to get in touch with me. I am always open to discussing
             new projects, creative ideas or opportunities to be part of your
@@ -46,7 +43,7 @@ const Contact = () => {
               <FaMap className="text-3xl"></FaMap>
             </div>
             <div>
-              <p className="text-xl text-[#EB4A4C] font-semibold">
+              <p className="text-xl text-sky-500 font-semibold">
                 ADDRESS POINT
               </p>
               <p>543, High Dream Palace, Dhaka, Bangladesh</p>
@@ -57,7 +54,7 @@ const Contact = () => {
               <FaVoicemail className="text-3xl"></FaVoicemail>
             </div>
             <div>
-              <p className="text-xl text-[#EB4A4C] font-semibold">MAIL ME</p>
+              <p className="text-xl text-sky-500 font-semibold">MAIL ME</p>
               <p>nashedshah.2016@gmail.com</p>
             </div>
           </div>
@@ -66,16 +63,16 @@ const Contact = () => {
               <FaPhoneSquare className="text-3xl"></FaPhoneSquare>
             </div>
             <div>
-              <p className="text-xl text-[#EB4A4C] font-semibold">CALL ME</p>
+              <p className="text-xl text-sky-500 font-semibold">CALL ME</p>
               <p>+880-1318214398</p>
             </div>
           </div>
         </div>
-        <div className="my-20 lg:w-1/2">
+        <div className="my-10 lg:w-1/2">
           <h3 className="text-3xl font-semibold">
-            LEFT AN <span className="text-[#EB4A4C]">EMAIL</span>
+            LEFT AN <span className="text-sky-500">EMAIL</span>
           </h3>
-          <div className="bg-[#EB4A4C] w-full h-1 my-4"></div>
+          <div className="bg-sky-500 w-full h-1 my-4"></div>
 
           {/* form start here */}
           <form ref={form} onSubmit={sendEmail}>
@@ -98,7 +95,7 @@ const Contact = () => {
               className="input input-bordered w-full my-3 rounded-xl h-36 p-2"
             />
             <br />
-            <button className="btn bg-[#EB4A4C] text-white hover:bg-transparent rounded-xl">
+            <button className="btn bg-sky-500 text-white hover:bg-transparent rounded-xl">
               <FaLocationArrow className="mr-4" /> Submit
             </button>
           </form>

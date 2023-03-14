@@ -19,11 +19,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const Projects = () => {
   return (
     <section className="text-white">
-      <h1 className="text-4xl text-center font-bold tracking-widest">
-        <span className="text-[#EB4A4C]">MY</span> Projcets
-      </h1>
-      <section className="mx-10 my-20">
-        <div className="mt-20">
+      <section className="mx-5 mt-5 mb-20">
+        <h1 className="text-3xl font-bold tracking-widest">
+          <span className="text-sky-500">MY</span> Projcets
+        </h1>
+        <div className="bg-sky-500 w-full h-1 mt-4"></div>
+        <div className="mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="lg:col-span-1 w-full">
               <Carousel autoPlay={true} infiniteLoop={true}>
@@ -51,7 +52,7 @@ const Projects = () => {
               <div className="my-5 flex items-center gap-5">
                 <a
                   href="https://chitromaya-7e217.web.app/"
-                  className="text-white btn text-center bg-[#EB4A4C] py-2 rounded  uppercase text-xs px-5 "
+                  className="text-white btn text-center bg-sky-500 py-2 rounded  uppercase text-xs px-5 "
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -162,7 +163,7 @@ const Projects = () => {
               <div className="my-5 flex items-center gap-5">
                 <a
                   href="https://mobile-bechi.web.app/"
-                  className="text-white btn text-center bg-[#EB4A4C] py-2 rounded  uppercase text-xs px-5 "
+                  className="text-white btn text-center bg-sky-500 py-2 rounded  uppercase text-xs px-5 "
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -294,7 +295,7 @@ const Projects = () => {
               <div className="my-5 flex items-center gap-5">
                 <a
                   href="https://learn-with-fun-6ce4e.web.app/"
-                  className="text-white btn text-center bg-[#EB4A4C] py-2 rounded  uppercase text-xs px-5 "
+                  className="text-white btn text-center bg-sky-500 py-2 rounded  uppercase text-xs px-5 "
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -337,9 +338,7 @@ const Projects = () => {
                   </p>
                 </li>
                 <li>
-                  <p>
-                    3. User can download the course details as pdf also. 
-                  </p>
+                  <p>3. User can download the course details as pdf also.</p>
                 </li>
               </ul>
               <h2 className="text-white font-bold  uppercase">Technology</h2>

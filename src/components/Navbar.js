@@ -1,6 +1,6 @@
 import React from "react";
 import { HiBars3CenterLeft } from "react-icons/hi2";
-import { FaGithubAlt, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import { FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaReact } from "react-icons/fa";
 const Navbar = () => {
@@ -15,14 +15,16 @@ const Navbar = () => {
             <HiBars3CenterLeft className="text-white text-4xl"></HiBars3CenterLeft>
           </label>
         </div>
+        <div>
         <Link
           to="/"
           className="ml-5 text-3xl text-white font-semibold flex"
           href="/"
         >
-          N<span className="text-[#EB4A4C]">SR</span>
-          <FaReact className="animate-spin"></FaReact>
+          N<span className="text-sky-500">SR</span>
+          <FaReact className="hover:animate-spin"></FaReact>
         </Link>
+        </div>
       </div>
       <div className="navbar-end">
         <div className="flex gap-4 text-white">
@@ -31,26 +33,26 @@ const Navbar = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className=" p-3 rounded-full bg-[#EB4A4C] hover:bg-white hover:text-[#EB4A4C]">
+            <div className=" p-3 rounded-full bg-sky-500 hover:bg-white hover:text-sky-500">
               <FaGithubAlt className="text-xl"></FaGithubAlt>
             </div>
           </a>
-          <a
+          {/* <a
             href="https://www.facebook.com/profile.php?id=100009916696962"
             target="_blank"
             rel="noreferrer"
           >
-            <div className=" p-3 rounded-full bg-[#EB4A4C]  hover:bg-white hover:text-[#EB4A4C]">
+            <div className=" p-3 rounded-full bg-sky-500  hover:bg-white hover:text-sky-500">
               <FaFacebookF className="text-xl"></FaFacebookF>
             </div>
-          </a>
+          </a> */}
 
           <a
             href="https://www.linkedin.com/in/nashed-shah-roni-21b341171/"
             target="_blank"
             rel="noreferrer"
           >
-            <div className=" p-3 rounded-full bg-[#EB4A4C]  hover:bg-white hover:text-[#EB4A4C]">
+            <div className=" p-3 rounded-full bg-sky-500  hover:bg-white hover:text-sky-500">
               <FaLinkedinIn className="text-xl"></FaLinkedinIn>
             </div>
           </a>

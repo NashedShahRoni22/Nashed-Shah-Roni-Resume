@@ -70,8 +70,10 @@ const Main = () => {
           </ul>
         </div>
       </div>
-      <div className="absolute right-0 bottom-0 flex justify-center w-full md:hidden">
-        <BottomBar></BottomBar>
+      <div className="absolute bottom-0 md:hidden w-full">
+        <div className="flex justify-center">
+          <BottomBar></BottomBar>
+        </div>
       </div>
     </section>
   );

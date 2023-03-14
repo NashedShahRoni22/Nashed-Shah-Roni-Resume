@@ -5,10 +5,7 @@ import MyServices from "../About/MyServices";
 
 const About = () => {
   return (
-    <section className="mx-10">
-      <h1 className="text-white text-4xl text-center font-bold tracking-widest">
-        ABOUT <span className="text-[#EB4A4C]">ME</span>
-      </h1>
+    <section className="mx-5 mb-20">
       {/* Personal Information  */}
       <PersonalInformation></PersonalInformation>
       {/* My Skills  */}

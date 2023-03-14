@@ -11,30 +11,30 @@ import { Link } from "react-router-dom";
 
 const BottomBar = () => {
   return (
-    <section className="text-white flex p-2 rounded-xl gap-6 glass w-fit">
+    <section className="text-white flex px-4 py-2 rounded-xl gap-12 glass justify-evenly">
       <div>
         <Link to="/">
-          <AiOutlineHome className="text-3xl"></AiOutlineHome>
+          <AiOutlineHome className="text-3xl hover:text-sky-500"></AiOutlineHome>
         </Link>
       </div>
       <div>
         <Link to="/about">
-          <AiOutlineUser className="text-3xl"></AiOutlineUser>
+          <AiOutlineUser className="text-3xl hover:text-sky-500"></AiOutlineUser>
         </Link>
       </div>
       <div>
         <Link to="/projects">
-          <AiOutlineFundProjectionScreen className="text-3xl"></AiOutlineFundProjectionScreen>
+          <AiOutlineFundProjectionScreen className="text-3xl hover:text-sky-500"></AiOutlineFundProjectionScreen>
         </Link>
       </div>
       <div>
         <Link to="/blog">
-          <FaBlog className="text-3xl"></FaBlog>
+          <FaBlog className="text-3xl hover:text-sky-500"></FaBlog>
         </Link>
       </div>
       <div>
         <Link to="/contact">
-          <AiOutlineMail className="text-3xl"></AiOutlineMail>
+          <AiOutlineMail className="text-3xl hover:text-sky-500"></AiOutlineMail>
         </Link>
       </div>
     </section>

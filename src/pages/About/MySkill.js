@@ -15,10 +15,10 @@ const MySkill = () => {
   return (
     <div className="text-white my-20">
       <h1 className="text-3xl tracking-wider">
-        MY <span className="text-[#EB4A4C]">SKILLS</span>
+        MY <span className="text-sky-500">SKILLS</span>
       </h1>
-      <div className="bg-[#EB4A4C] w-full h-1 mt-4"></div>
-      <div className="my-40 grid grid-cols-2 md:grid-cols-4 gap-16">
+      <div className="bg-sky-500 w-full h-1 mt-4"></div>
+      <div className="my-10 grid grid-cols-2 md:grid-cols-4 gap-16">
         <div className="flex flex-col items-center glass p-2 rounded-xl">
           <AiFillHtml5 className="text-5xl text-orange-500"></AiFillHtml5>
           <p className="text-center mt-2 text-2xl">HTML5</p>
