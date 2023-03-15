@@ -8,7 +8,7 @@ const Blog = () => {
     height: 400,
   };
   return (
-    <section className="h-[100vh] flex flex-col items-center justify-center">
+    <section className="py-10 flex flex-col items-center justify-center">
       <Lottie animationData={comingSoonAnim} style={style} />
       <h1 className="text-3xl font-semibold text-white">
         <Typewriter

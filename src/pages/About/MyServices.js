@@ -6,14 +6,14 @@ import { AiOutlineAndroid } from "react-icons/ai";
 const MyServices = () => {
   return (
     <div className="text-white my-10">
-      <h1 className="text-3xl tracking-wider">
+      <h1 className="text-xl md:text-2xl tracking-wider font-bold">
         MY <span className="text-sky-500">SERVICES</span>
       </h1>
       <div className="bg-sky-500 w-full h-1 mt-4"></div>
       <div className="my-10 text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className="border p-10 rounded-xl hover:glass">
           <BsCodeSlash className="text-5xl"></BsCodeSlash>
-          <p className="text-2xl text-sky-500 my-4 font-semibold">
+          <p className="text-xl text-sky-500 my-4 font-semibold">
             Front End Development
           </p>
           <p>
@@ -24,7 +24,7 @@ const MyServices = () => {
         </div>
         <div className="border p-10 rounded-xl hover:glass">
           <BsBrush className="text-5xl"></BsBrush>
-          <p className="text-2xl text-sky-500 my-4 font-semibold">UI/UX</p>
+          <p className="text-xl text-sky-500 my-4 font-semibold">UI/UX</p>
           <p>
             I can design elegent looking and user friendly UI/UX for web and
             android application. Specially I use figma to create those design.
@@ -32,7 +32,7 @@ const MyServices = () => {
         </div>
         <div className="border p-10 rounded-xl hover:glass">
           <FaReact className="text-5xl"></FaReact>
-          <p className="text-2xl text-sky-500 my-4 font-semibold">
+          <p className="text-xl text-sky-500 my-4 font-semibold">
             React Application
           </p>
           <p>
@@ -42,7 +42,7 @@ const MyServices = () => {
         </div>
         <div className="border p-10 rounded-xl hover:glass">
           <AiOutlineAndroid className="text-5xl"></AiOutlineAndroid>
-          <p className="text-2xl text-sky-500 my-4 font-semibold">
+          <p className="text-xl text-sky-500 my-4 font-semibold">
             Android Application
           </p>
           <p>

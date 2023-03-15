@@ -1,9 +1,14 @@
 import React from "react";
+import AnimatedNumbers from "react-animated-numbers";
 
 const PersonalInformation = () => {
+  const expYear = 2;
+  const projectsN = 25;
+  const clientN = 10;
+  const satisfaction = 100;
   return (
     <div className="text-white mt-5">
-      <h1 className="text-3xl tracking-wider">
+      <h1 className="text-xl md:text-2xl tracking-wider font-bold">
         PERSONAL <span className="text-sky-500">INFOS</span>
       </h1>
       <div className="bg-sky-500 w-full h-1 mt-4"></div>
@@ -11,15 +16,11 @@ const PersonalInformation = () => {
         <div className="my-10 text-xl md:flex justify-between gap-6">
           <ul>
             <li className="my-2">
-              <span className="text-sky-500 font-semibold text-2xl">
-                First Name:
-              </span>{" "}
+              <span className="text-sky-500 font-semibold text-2xl">Name:</span>{" "}
               Nashed Shah Roni
             </li>
             <li className="my-2">
-              <span className="text-sky-500 font-semibold text-2xl">
-                Age:
-              </span>{" "}
+              <span className="text-sky-500 font-semibold text-2xl">Age:</span>{" "}
               24 Years
             </li>
             <li className="my-2">
@@ -68,28 +69,72 @@ const PersonalInformation = () => {
             </li>
           </ul>
         </div>
-        <div className="text-white my-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="hover:glass rounded-xl border flex items-center gap-4 p-10">
-            <h1 className="text-5xl font-semibold text-sky-500">2+</h1>
-            <p className="text-2xl">
+        <div className="text-white my-10 grid grid-cols-2 gap-6">
+          <div className="hover:glass rounded-xl justify-between border flex flex-col md:flex-row items-center gap-4 p-10">
+            <h1 className="text-4xl font-semibold text-sky-500">
+              <AnimatedNumbers
+                includeComma
+                animateToNumber={expYear}
+                locale="en-US"
+                configs={[
+                  { mass: 1, tension: 30, friction: 10 },
+                  { mass: 2, tension: 40, friction: 10 },
+                  { mass: 3, tension: 30, friction: 10 },
+                ]}
+              />
+            </h1>
+            <p className="text-xl text-center">
               YEARS OF <br /> EXPERIENCE
             </p>
           </div>
-          <div className="hover:glass rounded-xl border border-sky-500 flex items-center gap-4 p-10">
-            <h1 className="text-5xl font-semibold text-sky-500">25+</h1>
-            <p className="text-2xl">
+          <div className="hover:glass rounded-xl justify-between border border-sky-500 flex flex-col md:flex-row items-center gap-4 p-10">
+            <h1 className="text-4xl font-semibold text-sky-500">
+              <AnimatedNumbers
+                includeComma
+                animateToNumber={projectsN}
+                locale="en-US"
+                configs={[
+                  { mass: 1, tension: 30, friction: 10 },
+                  { mass: 2, tension: 40, friction: 10 },
+                  { mass: 3, tension: 30, friction: 10 },
+                ]}
+              />
+            </h1>
+            <p className="text-xl text-center">
               COMPLETED <br /> PROJECTS
             </p>
           </div>
-          <div className="hover:glass rounded-xl border border-sky-500 flex items-center gap-4 p-10">
-            <h1 className="text-5xl font-semibold text-sky-500">10+</h1>
-            <p className="text-2xl">
+          <div className="hover:glass rounded-xl justify-between border border-sky-500 flex flex-col md:flex-row items-center gap-4 p-10">
+            <h1 className="text-4xl font-semibold text-sky-500">
+              <AnimatedNumbers
+                includeComma
+                animateToNumber={clientN}
+                locale="en-US"
+                configs={[
+                  { mass: 1, tension: 30, friction: 10 },
+                  { mass: 2, tension: 40, friction: 10 },
+                  { mass: 3, tension: 30, friction: 10 },
+                ]}
+              />
+            </h1>
+            <p className="text-xl text-center">
               HAPPY <br /> CLIENTS
             </p>
           </div>
-          <div className="hover:glass rounded-xl border flex items-center gap-4 p-10">
-            <h1 className="text-5xl font-semibold text-sky-500">100%</h1>
-            <p className="text-2xl">
+          <div className="hover:glass rounded-xl justify-between border flex flex-col md:flex-row items-center gap-4 p-10">
+            <h1 className="text-4xl font-semibold text-sky-500">
+              <AnimatedNumbers
+                includeComma
+                animateToNumber={satisfaction}
+                locale="en-US"
+                configs={[
+                  { mass: 1, tension: 30, friction: 10 },
+                  { mass: 2, tension: 40, friction: 10 },
+                  { mass: 3, tension: 30, friction: 10 },
+                ]}
+              />
+            </h1>
+            <p className="text-xl text-center">
               CLIENTS <br /> SATISFACTION
             </p>
           </div>

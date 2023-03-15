@@ -12,13 +12,13 @@ const Navbar = () => {
             htmlFor="my-drawer-2"
             className="cursor-pointer drawer-button lg:hidden"
           >
-            <HiBars3CenterLeft className="text-white text-4xl"></HiBars3CenterLeft>
+            <HiBars3CenterLeft className="text-white text-3xl"></HiBars3CenterLeft>
           </label>
         </div>
         <div>
         <Link
           to="/"
-          className="ml-5 text-3xl text-white font-semibold flex"
+          className="ml-5 text-2xl text-white font-semibold flex"
           href="/"
         >
           N<span className="text-sky-500">SR</span>
@@ -33,27 +33,17 @@ const Navbar = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className=" p-3 rounded-full bg-sky-500 hover:bg-white hover:text-sky-500">
-              <FaGithubAlt className="text-xl"></FaGithubAlt>
+            <div className="p-3 hover:text-sky-500">
+              <FaGithubAlt className="text-2xl"></FaGithubAlt>
             </div>
           </a>
-          {/* <a
-            href="https://www.facebook.com/profile.php?id=100009916696962"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className=" p-3 rounded-full bg-sky-500  hover:bg-white hover:text-sky-500">
-              <FaFacebookF className="text-xl"></FaFacebookF>
-            </div>
-          </a> */}
-
           <a
             href="https://www.linkedin.com/in/nashed-shah-roni-21b341171/"
             target="_blank"
             rel="noreferrer"
           >
-            <div className=" p-3 rounded-full bg-sky-500  hover:bg-white hover:text-sky-500">
-              <FaLinkedinIn className="text-xl"></FaLinkedinIn>
+            <div className="p-3  hover:text-sky-500">
+              <FaLinkedinIn className="text-2xl"></FaLinkedinIn>
             </div>
           </a>
         </div>

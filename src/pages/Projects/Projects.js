@@ -1,30 +1,66 @@
 import React from "react";
-import project1 from "../../images/chitromaya/portofolio-chitromaya (1).jpg";
-import project2 from "../../images/chitromaya/portofolio-chitromaya (2).png";
-import project3 from "../../images/chitromaya/portofolio-chitromaya (3).png";
-import project4 from "../../images/chitromaya/portofolio-chitromaya (4).png";
+// import project1 from "../../images/chitromaya/portofolio-chitromaya (1).jpg";
+// import project2 from "../../images/chitromaya/portofolio-chitromaya (2).png";
+// import project3 from "../../images/chitromaya/portofolio-chitromaya (3).png";
+// import project4 from "../../images/chitromaya/portofolio-chitromaya (4).png";
 
-import mobileBechi1 from "../../images/mobilebechi/Mobile-Bechi.jpg";
-import mobileBechi2 from "../../images/mobilebechi/Mobile-Bechi-Admin.png";
-import mobileBechi3 from "../../images/mobilebechi/Mobile-Bechi-Buyer.png";
-import mobileBechi4 from "../../images/mobilebechi/Mobile-Bechi-Seller.png";
+// import mobileBechi1 from "../../images/mobilebechi/Mobile-Bechi.jpg";
+// import mobileBechi2 from "../../images/mobilebechi/Mobile-Bechi-Admin.png";
+// import mobileBechi3 from "../../images/mobilebechi/Mobile-Bechi-Buyer.png";
+// import mobileBechi4 from "../../images/mobilebechi/Mobile-Bechi-Seller.png";
 
-import learnwithfun1 from "../../images/learnwithfun/learn-with-fun (1).png";
-import learnwithfun2 from "../../images/learnwithfun/learn-with-fun (2).png";
-import learnwithfun3 from "../../images/learnwithfun/learn-with-fun (3).png";
-import learnwithfun4 from "../../images/learnwithfun/learn-with-fun (4).png";
+// import learnwithfun1 from "../../images/learnwithfun/learn-with-fun (1).png";
+// import learnwithfun2 from "../../images/learnwithfun/learn-with-fun (2).png";
+// import learnwithfun3 from "../../images/learnwithfun/learn-with-fun (3).png";
+// import learnwithfun4 from "../../images/learnwithfun/learn-with-fun (4).png";
 
-import { Carousel } from "react-responsive-carousel";
+// import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import ProjectCard from "./ProjectCard";
+
+const projectsData = [
+  {
+    img: "https://i.ibb.co/WnyL386/chitromaya.png",
+    name: "Chitromaya",
+    link: "https://chitromaya-7e217.web.app/",
+  },
+  {
+    img: "https://i.ibb.co/grNmSTY/mobile-bechi.png",
+    name: "Mobile Bechi",
+    link: "https://mobile-bechi.web.app/",
+  },
+  {
+    img: "https://i.ibb.co/Qf4hYHv/employee-Management.png",
+    name: "Employe Management",
+    link: "https://employe-management-app.netlify.app/",
+  },
+  {
+    img: "https://i.ibb.co/RQX5Y1d/hg.png",
+    name: "Home Grow",
+    link: "https://homegrowbd.com/",
+  },
+  {
+    img: "https://i.ibb.co/XsQtNQd/lwf.png",
+    name: "Learn With Fun",
+    link: "https://learn-with-fun-6ce4e.web.app/",
+  },
+
+  {
+    img: "https://i.ibb.co/QrJqMqR/task.png",
+    name: "Task management",
+    link: "https://task-management-74b34.web.app/",
+  },
+];
+
 const Projects = () => {
   return (
     <section className="text-white">
       <section className="mx-5 mt-5 mb-20">
-        <h1 className="text-3xl font-bold tracking-widest">
-          <span className="text-sky-500">MY</span> Projcets
+        <h1 className="text-xl md:text-2xl tracking-wider font-bold">
+          <span className="text-sky-500">MY</span> Projects
         </h1>
         <div className="bg-sky-500 w-full h-1 mt-4"></div>
-        <div className="mt-10">
+        {/* <div className="mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="lg:col-span-1 w-full">
               <Carousel autoPlay={true} infiniteLoop={true}>
@@ -360,6 +396,11 @@ const Projects = () => {
               </div>
             </div>
           </div>
+        </div> */}
+        <div className="my-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-5 place-items-center">
+          {projectsData.map((p, i) => (
+            <ProjectCard p={p} key={i} />
+          ))}
         </div>
       </section>
     </section>

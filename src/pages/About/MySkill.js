@@ -14,7 +14,7 @@ import {
 const MySkill = () => {
   return (
     <div className="text-white my-20">
-      <h1 className="text-3xl tracking-wider">
+      <h1 className="text-xl md:text-2xl tracking-wider font-bold">
         MY <span className="text-sky-500">SKILLS</span>
       </h1>
       <div className="bg-sky-500 w-full h-1 mt-4"></div>

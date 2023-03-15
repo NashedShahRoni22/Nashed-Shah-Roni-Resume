@@ -11,6 +11,7 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 import BottomBar from "../components/BottomBar";
+import Footer from "../components/Footer";
 
 const Main = () => {
   const menuIitems = (
@@ -22,27 +23,27 @@ const Main = () => {
       </div>
       <div>
         <li>
-          <Link to="/" className="text-xl font-semibold">
+          <Link to="/" className="text-xl hover:text-sky-500 font-semibold">
             <AiOutlineHome /> Home
           </Link>
         </li>
         <li>
-          <Link to="/about" className="text-xl font-semibold">
+          <Link to="/about" className="hover:text-sky-500 text-xl font-semibold">
             <AiOutlineUser /> About
           </Link>
         </li>
         <li>
-          <Link to="/projects" className="text-xl font-semibold">
+          <Link to="/projects" className="hover:text-sky-500 text-xl font-semibold">
             <AiOutlineFundProjectionScreen /> Projects
           </Link>
         </li>
         <li>
-          <Link to="/blog" className="text-xl font-semibold">
+          <Link to="/blog" className="hover:text-sky-500 text-xl font-semibold">
             <FaBlog /> Blog
           </Link>
         </li>
         <li>
-          <Link to="/contact" className="text-xl font-semibold">
+          <Link to="/contact" className="hover:text-sky-500 text-xl font-semibold">
             <AiOutlineMail /> Contact
           </Link>
         </li>
@@ -62,6 +63,9 @@ const Main = () => {
         <div className="drawer-content">
           <Navbar></Navbar>
           <Outlet></Outlet>
+          <div className="hidden md:block">
+          <Footer></Footer>
+          </div>
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>

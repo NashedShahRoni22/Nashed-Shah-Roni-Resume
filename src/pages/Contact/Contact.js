@@ -27,8 +27,8 @@ const Contact = () => {
   return (
     <section className="mx-5 mb-20 text-white">
       <div className="lg:flex gap-16">
-        <div className="my-5 lg:w-1/2">
-          <h3 className="text-3xl font-semibold">
+        <div className="my-10 lg:w-1/2">
+          <h3 className="text-xl md:text-2xl tracking-wider font-bold">
             <span className="text-sky-500">DON'T</span> BE SHY !
           </h3>
           <div className="bg-sky-500 w-full h-1 mt-5"></div>
@@ -69,7 +69,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="my-10 lg:w-1/2">
-          <h3 className="text-3xl font-semibold">
+          <h3 className="text-xl md:text-2xl tracking-wider font-bold">
             LEFT AN <span className="text-sky-500">EMAIL</span>
           </h3>
           <div className="bg-sky-500 w-full h-1 my-4"></div>
@@ -95,7 +95,7 @@ const Contact = () => {
               className="input input-bordered w-full my-3 rounded-xl h-36 p-2"
             />
             <br />
-            <button className="btn bg-sky-500 text-white hover:bg-transparent rounded-xl">
+            <button className="btn bg-sky-500 hover:border-sky-500 text-white hover:bg-transparent rounded-xl">
               <FaLocationArrow className="mr-4" /> Submit
             </button>
           </form>
